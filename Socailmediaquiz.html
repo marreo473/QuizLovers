@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Social Media Quiz </title>
+    </head>
+    <h2> Social Media Quiz</h2>
+    <body text="floralwhite">
+    Q1.   What is the most popular social media platform? <br>
+    <input type="radio" name="question1"> Twitter <br> 
+    <input type="radio" name="question1"> Tik Tok <br>
+    <input type="radio" name="question1"> WhatsApp <br>
+    <input type="radio" name="question1" id="correct1"> Facebook <br>
+<br>
+    Q2.  Who is the creator of facebook? <br>
+    <input type="radio" name="question2" id="correct2"> Mark Zuckerberg <br> 
+    <input type="radio" name="question2"> Magic johnson <br>
+    <input type="radio" name="question2"> Steve Jobs <br>
+    <input type="radio" name="question2"> Bill Gates <br>
+    <br>
+    Q3.  Which social media giant bought their competition?    <br>
+    <input type="radio" name="question3" id="correct3"> Facebook <br> 
+    <input type="radio" name="question3"> WhatsApp <br>
+    <input type="radio" name="question3"> Twitter <br>
+    <input type="radio" name="question3"> Tinder <br>
+    <br>
+    Q4.   Which one of the following platforms can you generate revenue from?<br>
+    <input type="radio" name="question4"> Linkedin <br> 
+    <input type="radio" name="question4" id="correct4"> Tik Tok <br>
+    <input type="radio" name="question4" id="correct4"> Facebook <br>
+    <input type="radio" name="question4"> Instagram <br>
+    <br>
+    Q5.  Is Meta the new Name for Facebook? <br>
+    <input type="radio" name="question5" id="correct5"> True <br> 
+    <input type="radio" name="question5" id> False<br>
+
+<br>
+    <input type="submit" name="submit" value="Submit Quiz" onClick="result()"> <a href="index.html"><button> Back </button></a>
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+    if(document.getElementById('correct4').checked)
+		{	score++;
+		}
+    if(document.getElementById('correct5').checked)
+		{	score++;
+		}
+ alert("Congrats Your score is:" + score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+
+
+
+<style>
+    #Greeting {text-align: center; color: floralwhite;}
+    #greetingInput {text-align: center; color: floralwhite;}
+    body {background-color: red;}
+
+</style>
+
+
+
+    
+    </body>
+</html>

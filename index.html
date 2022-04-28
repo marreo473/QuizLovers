@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Quiz Lovers </title>
+</head>
+<body text="floralwhite">
+    <div id="Greeting">
+    <h1> Welcome to Quiz Lovers </h1>
+    <h2 id="headertext"> Please enter your name </h2> <br>
+    </div>
+    <div id="greetingInput"><br>
+        <input id="userName">
+        <button onclick="greeting()"> Submit </button>
+    </div>
+    <style>
+        #Greeting {text-align: center; color: floralwhite;}
+        #greetingInput {text-align: center; color: floralwhite;}
+        body {background-color: red;}
+
+    </style>
+
+    <script>
+       let userName = document.querySelector("#userName"); 
+       let headertext = document.querySelector("#headertext");
+       let greetingInput = document.querySelector("#greetingInput");
+
+
+       
+       function greeting(){
+           headertext.innerHTML =""
+           headertext.innerHTML ="Hello " + userName.value + ", Welcome to quiz lovers.";
+           greetingInput.style.display ="none"
+       }
+    </script>
+    <p><font color="floralwhite"></font>
+    <h2> Kindly test your knowledge with the following quizzes: </h2><br>
+    
+</p>
+    <div class="menu">
+        <ul>
+            <li><a href="Carsquiz.html">Car Quiz</a></li>
+            <li><a href="Musicquiz.html">Music Quiz</a></li>
+            <li><a href="Socailmediaquiz.html">Social Media Quiz</a></li>
+        </ul>
+    </div><br>
+<title> Photos </title>
+<h3>Imagine Collage</h3><br>
+
+<div class="gallery">
+  <img
+    src="books.jpg"
+    class="gallery__photo gallery__photo--p1"
+    alt=""
+  />
+  <img
+    src="wa.jpg"
+    class="gallery__photo gallery__photo--p2"
+    alt=""
+  />
+  <img
+    src="hv.jpg"
+    class="gallery__photo gallery__photo--p3"
+    alt=""
+  />
+  <img
+    src="bugatti.jpg"
+    class="gallery__photo gallery__photo--p4"
+    alt=""
+  />
+  <img
+  src="wayne.jpg"
+  class="gallery__photo gallery__photo--p5"
+  alt=""
+/>
+</div>
+</body>
+</html>

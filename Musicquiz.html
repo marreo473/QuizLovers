@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Music Quiz </title>
+    </head>
+    <h2> Music Quiz</h2>
+    <body text="floralwhite">
+    Q1.  Who sold one million records in a week? <br>
+    <input type="radio" name="question1"> Drake <br> 
+    <input type="radio" name="question1"> Bob Marley <br>
+    <input type="radio" name="question1"> Chris Brown <br>
+    <input type="radio" name="question1" id="correct1"> Lil Wayne <br>
+<br>
+    Q2.   Who is the king of the dancehall? <br>
+    <input type="radio" name="question2" id="correct2"> Vybz Kartel <br> 
+    <input type="radio" name="question2"> Beenie Man <br>
+    <input type="radio" name="question2"> Elephant Man <br>
+    <input type="radio" name="question2"> Movado <br>
+    <br>
+    Q3.  Who is the king of pop?    <br>
+    <input type="radio" name="question3" id="correct3"> MJ <br> 
+    <input type="radio" name="question3"> Chris Brown <br>
+    <input type="radio" name="question3"> Prince <br>
+    <input type="radio" name="question3"> Usher <br>
+    <br>
+    Q4.  What type of music is native only to the Caribbean region?<br>
+    <input type="radio" name="question4"> Gospel <br> 
+    <input type="radio" name="question4" id="correct4"> Soca <br>
+    <input type="radio" name="question4"> Rnb <br>
+    <input type="radio" name="question4"> Pop Music <br>
+    <br>
+    Q5.  Who is the king of soca? <br>
+    <input type="radio" name="question5"> Machel Motano <br> 
+    <input type="radio" name="question5" id="correct5"> Lord shorty <br>
+    <input type="radio" name="question5"> Vybz Kartel <br>
+    <input type="radio" name="question5"> Lil Wayne <br>
+
+<br>
+    <input type="submit" name="submit" value="Submit Quiz" onClick="result()"> <a href="index.html"><button> Back </button></a>
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+    if(document.getElementById('correct4').checked)
+		{	score++;
+		}
+    if(document.getElementById('correct5').checked)
+		{	score++;
+		}
+ alert("Congrats Your score is:" +score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+
+
+<style>
+    #Greeting {text-align: center; color: floralwhite;}
+    #greetingInput {text-align: center; color: floralwhite;}
+    body {background-color: red;}
+
+</style><br>
+
+<br>
+<p>Click Play and Listen to Some Sweet sounding Guitar While Attempting This Quiz</p>
+<audio source src="file:///D:/Website/quiz2/audio/g.mp3" controls>
+</audio>
+
+
+
+    
+    </body>
+</html>

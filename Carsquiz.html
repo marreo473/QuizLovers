@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Car Quiz </title>
+    </head>
+    <h2> Car Quiz</h2>
+    <body text="floralwhite">
+    Q1. What year was the first automobile invented? <br>
+    <input type="radio" name="question1"> 2000 <br> 
+    <input type="radio" name="question1"> 1901 <br>
+    <input type="radio" name="question1"> yesterday <br>
+    <input type="radio" name="question1" id="correct1"> 1885/1886 <br>
+<br>
+    Q2.  What is the fastest car in the world? <br>
+    <input type="radio" name="question2" id="correct2"> SSC Tuatara <br> 
+    <input type="radio" name="question2"> Bugatti Chiron Super Sport <br>
+    <input type="radio" name="question2"> Hennessey Venom <br>
+    <input type="radio" name="question2"> Lexus RCF <br>
+    <br>
+    Q3.  Which car is faster than a plane? <br>
+    <input type="radio" name="question3" id="correct3"> Thrust SSC <br> 
+    <input type="radio" name="question3"> Lamborghini <br>
+    <input type="radio" name="question3"> Corolla GT <br>
+    <input type="radio" name="question3"> Bentley    <br>
+    <br>
+    Q4.  Which is the most popular automobile brand in the world?<br>
+    <input type="radio" name="question4"> Lexus <br> 
+    <input type="radio" name="question4" id="correct4"> Toyota <br>
+    <input type="radio" name="question4"> GMC <br>
+    <input type="radio" name="question4"> Ferrari <br>
+    <br>
+    Q5. In this modern era we live in which mode of transportation would you prefer? (based on 
+    high gas prices)<br>
+    <input type="radio" name="question5">  The flintstone’s way <br> 
+    <input type="radio" name="question5" id="correct5"> Walking <br>
+    <input type="radio" name="question5"> Horse <br>
+    <input type="radio" name="question5"> Rum <br>
+
+<br>
+    <input type="submit" name="submit" value="Submit Quiz" onClick="result()"> <a href="index.html"><button> Back </button></a>
+    
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+    if(document.getElementById('correct4').checked)
+		{	score++;
+		}
+    if(document.getElementById('correct5').checked)
+		{	score++;
+		}
+ alert("Congrats Your score is:" +score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+
+
+<style>
+    #Greeting {text-align: center; color: floralwhite;}
+    #greetingInput {text-align: center; color: floralwhite;}
+    body {background-color: red;}
+
+</style>
+
+
+
+
+
+    
+    </body>
+</html>
